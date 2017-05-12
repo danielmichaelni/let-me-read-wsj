@@ -1,0 +1,17 @@
+{
+  "manifest_version": 2,
+
+  "name": "Let Me Read WSJ",
+  "version": "1.0",
+
+  "content_scripts": [
+    {
+      "matches": ["https://www.wsj.com/articles/*"],
+      "js": ["wsjScript.js"]
+    },
+    {
+      "matches": ["https://www.facebook.com/flx/warn/?u=https%3A%2F%2Fwww.wsj.com%2Farticles%2F*"],
+      "js": ["fbScript.js"]
+    }
+  ]
+}
