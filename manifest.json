@@ -2,15 +2,25 @@
   "manifest_version": 2,
 
   "name": "Let Me Read WSJ",
-  "version": "1.0",
+  "version": "1.0.1",
+
+  "icons": {
+    "128": "icon.png"
+  },
 
   "content_scripts": [
     {
-      "matches": ["https://www.wsj.com/articles/*"],
+      "matches": [
+        "https://www.wsj.com/articles/*",
+        "https://blogs.wsj.com/*"
+      ],
       "js": ["wsjScript.js"]
     },
     {
-      "matches": ["https://www.facebook.com/flx/warn/?u=https%3A%2F%2Fwww.wsj.com%2Farticles%2F*"],
+      "matches": [
+        "https://www.facebook.com/flx/warn/?u=https%3A%2F%2Fwww.wsj.com%2Farticles%2F*",
+        "https://www.facebook.com/flx/warn/?u=https%3A%2F%2Fblogs.wsj.com%2F*"
+      ],
       "js": ["fbScript.js"]
     }
   ]
