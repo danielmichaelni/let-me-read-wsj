@@ -11,7 +11,7 @@ chrome.webRequest.onBeforeSendHeaders.addListener(
     };
   },
   {
-    urls: ["https://www.wsj.com/articles/*", "https://blogs.wsj.com/*"]
+    urls: ["https://www.wsj.com/articles/*", "https://blogs.wsj.com/*", "https://cn.wsj.com/articles/*"]
   },
   ["blocking", "requestHeaders"]
 );
