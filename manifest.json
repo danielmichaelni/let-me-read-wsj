@@ -16,6 +16,7 @@
     "webRequest",
     "webRequestBlocking",
     "https://www.wsj.com/articles/*",
-    "https://blogs.wsj.com/*"
+    "https://blogs.wsj.com/*",
+    "https://cn.wsj.com/articles/*"
   ]
 }
